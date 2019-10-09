@@ -33,6 +33,6 @@ C/S的架构模式比较适合此场景，将每个小程序的入口抽象为�
 
 ## 多进程和多任务栈的实现效果
 
-![avatar](example1.png #pic_center 200*200)
+<img style="width:300px;height:600px" src="example1.png" align=center />
 
 ![avatar](example2.png)
