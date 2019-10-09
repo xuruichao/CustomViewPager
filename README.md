@@ -19,7 +19,7 @@
 
 C/S的架构模式比较适合此场景，将每个小程序的入口抽象为客户端，用一个统一的Server来管理所有的请求，如下图所示：
 
-![avatar](CS.png)
+![avatar](/CS.png)
 
 1. Stub 跟 Proxy 是一对，俗称“代理-桩”。
 2. Proxy 相当于是拿在手里的遥控器，而 Stub 相当于长在电视机里的遥控接收器，它们有着一一对应的接口方法，但操作的方向刚好相反。
@@ -27,12 +27,12 @@ C/S的架构模式比较适合此场景，将每个小程序的入口抽象为�
 
 在Android中，使用Aidl来完成此业务场景的需求再合适不过了，不仅可以实现进程间的通信，还符合C/S的设计模式，方便统一处理信息和管理数据。下图是Aidl的工作模式：
 
-![avatar](aidl.png)
+![avatar](/aidl.png)
 
 在Server中，维护了一个进程和栈信息的数据关系，当用户有开启，关闭小程序等相关操作的时候，首先会响应到Server端，Server会根据现状去统一开启或销毁进程和栈，从而实现进程隔离的需求。
 
 ## 多进程和多任务栈的实现效果
 
-![avatar](example1.png)
+![avatar](/example1.png)
 
-![avatar](example2.png)
+![avatar](/example2.png)
